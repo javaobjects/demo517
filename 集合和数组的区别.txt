@@ -1,0 +1,32 @@
+List集合最大的特点是访问快，更新慢；三有产品；
+
+1.为什么要掌握集合？
+
+数组有缺点：
+1.使用之前一定要先初始化，给定长度
+2.数组一旦声明，只能放一种类型的元素
+
+int[] a
+double[] b
+Student[] stus
+
+集合的特点：
+1.集合使用之前也要初始化，但是如果集合存放不下元素的话，集合会自动扩大长度；
+2.集合是一个垃圾桶，什么元素都能放；
+
+List list=new ArrayList(10);
+		
+		list.add("abc");
+		list.add(10);
+		
+		list.add(new Object());
+		list.add("abc");
+		list.add(10);
+		
+		list.add(new Object());
+		list.add("abc");
+		list.add(10);
+		
+		list.add(new Object());
+		list.add("abc");
+		list.add(10);
