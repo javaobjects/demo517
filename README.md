@@ -53,7 +53,7 @@ public class TestCollection1 {
 }
 ```
 
-**以就就是我关于 *Java-集合和数组的区别*  知识点的整理与总结的全部内容，[另附源码](https://github.com/javaobjects/demo516)**
+**以就就是我关于 *Java-集合和数组的区别*  知识点的整理与总结的全部内容，[另附源码](https://github.com/javaobjects/demo517)**
 
 ==================================================================
 #### 分割线
