@@ -32,10 +32,14 @@ public class TestHashMap {
 		m.put(4,"yezong");
 		m.put(3,"tanzong");
 		
+		//迭代访问方式一：
 		for(Integer i: m.keySet()) {
 			System.out.println(i);
 		}
+		System.out.println("--------------------------");
+		m.remove(4);//删除key为4的元素
 		
+		//迭代访问方式二：把双列集合变成单列集合然后迭代
 		Set<Entry<Integer,String>> s = m.entrySet();
 		Iterator<Entry<Integer,String>> it = s.iterator();
 		while(it.hasNext()) {
