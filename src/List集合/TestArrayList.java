@@ -1,6 +1,7 @@
 package List集合;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -34,9 +35,32 @@ public class TestArrayList {
 		
 		List<Integer> list = new ArrayList<Integer>();//前面声明咯类型后面也要这样写，然后构造方法一组圆括号
 		list.add(123);
-		list.add(null);
+//		list.add(null);
 		list.add(234);
 		list.add(123);
+		list.add(678);
+		
+		Collections.sort(list);
+		System.out.println("Collections.sort(list): " + list.toString());
+		
+		
+		Collections.shuffle(list);
+		System.out.println("Collections.shuffle(list): " + list.toString());//打乱顺序
+		
+		List<Integer> dest_list = new ArrayList<>(10);
+		dest_list.add(1);
+		dest_list.add(1);
+		dest_list.add(1);
+		dest_list.add(1);
+		dest_list.add(1);
+		dest_list.add(1);
+		dest_list.add(1);
+		dest_list.add(1);
+		dest_list.add(1);
+		dest_list.add(1);
+		Collections.copy(dest_list,list);
+		System.out.println("dest_list: " + dest_list);
+		
 		
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
