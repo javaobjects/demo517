@@ -13,9 +13,10 @@ public class TestHashSet {
 		 * Set集合的声明及初始化
 		 * 
 		 * 特点：
-		 * 1、无序
+		 * 1、无先后顺序
 		 * 2、无重复
 		 * 3、无索引
+		 * 4、可以存放null数据
 		 */
 		Set<String> s = new HashSet<String>();
 		//往集合中添加元素
