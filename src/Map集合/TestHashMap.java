@@ -1,6 +1,7 @@
 package Map集合;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -21,6 +22,7 @@ public class TestHashMap {
 		 * 
 		 */
 		Map<Integer,String> m;
+		Hashtable<Integer, String> h;
 		m = new HashMap<>();
 		
 		m.put(1,"yezong");
